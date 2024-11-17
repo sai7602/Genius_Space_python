@@ -6,7 +6,7 @@
 # Пароль (password)
 # Напишіть публічні методи для установки і отримання значень цих полів (геттери і сеттери). Потім створіть об'єкт класу "Користувач" і встановіть значення полів, а також виведіть їх на екран.
 
-from abc import abstractmethod
+from abc import ABC, abstractmethod
 
 
 class User:
@@ -36,7 +36,7 @@ class User:
 # Завдання 2: Абстракція
 
 # Створіть клас "Фігура" (Shape), який буде абстрактним класом. У цьому класі визначіть абстрактний метод "обчислити_площу" (calculate_area).
-class Shape:
+class Shape(ABC):
     @abstractmethod
     def calculate_area(self):
         pass
